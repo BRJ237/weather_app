@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  weatherapp:
+    build: .
+    container_name: weatherapp
+    ports:
+      - "8081:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
